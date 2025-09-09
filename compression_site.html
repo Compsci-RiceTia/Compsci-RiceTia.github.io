@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lossy Compression Game</title>
+  <link rel="stylesheet" href="compression_style.css">
+</head>
+
+<body>
+  
+  <header id="titleHeader"></header>
+
+  <div id="modeScreen" class="screen">
+    <button class = "quarter-circle-right" onclick="selectMode('remove')">Remove Letters</button>
+    <button class="quarter-circle-left" onclick="selectMode('font')">Change Fonts</button>
+  </div>
+
+  <div id="gameScreen" class="screen" style="display: none;">
+    <div id="compressedDisplay"></div>
+    <input type="text" id="userGuess" placeholder="Type your guess here.." />
+    <button onclick="checkGuess()">Submit</button>
+    <div id="feedback"></div>
+    <button class = "half-circle-bottom" onclick="goBack()" style="cursor: pointer;">Back</button>
+  </div>
+
+  <script src="game_logic.js"></script>
+</body>
+</html>
