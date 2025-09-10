@@ -2,30 +2,15 @@ body {
   background-color: #f5ebd3;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width:100vw;
-  overflow: hidden;
   font-family: "Helvetica", sans-serif;
 }
 
-#titleHeader {
-  position: relative;
-  z-index: 3;
-  height: 40vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: #f5ebd3;
-}
-
-
 #titleHeader h1 {
-  font-size: 10vh;
+  text-align: left;
   color: #2f3291;
-  margin: 0;
-}
-
+  margin: 10px;
+  font-size: 7vh;
+} 
 
 .quarter-circle-left {
   color: white;
@@ -34,15 +19,14 @@ body {
   font-size: 2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  position: absolute;
+  position: fixed;
   bottom: 0; 
   left: 0;
-  width: 50vw;
-  height: 60vh;
+  width: 40vw;
+  height: 70vh;
   background-color: #2f3291;
   opacity: 0.5;
   border-top-right-radius: 80vw;
-  overflow: none;
 }
 
 .quarter-circle-right {
@@ -52,11 +36,11 @@ body {
   font-size: 2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  position: absolute;
+  position: fixed;
   bottom: 0; 
   right: 0;
   width: 60vw;
-  height: 60vh;
+  height: 85vh;
   background-color: #2f3291;
   opacity: 0.5;
   border-top-left-radius: 85vh;
@@ -84,11 +68,11 @@ body {
   cursor: pointer; /* indicate clickable */
   transition: background-color 0.3s ease;
   width: 100%;
-  height: 40vh;
+  height: 65vh;
   z-index: 1;
   background-color: #2f3291;
   opacity: 0.5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -98,27 +82,25 @@ body {
   border-bottom-right-radius: 0;
 }
 
-/* Mode Game Screen */
 .screen {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
 }
 
 #compressedDisplay {
-  margin: 1vh;
   font-size: 2.8em;
+  margin: 20px 0;
   color: #333;
 }
 
 #userGuess {
-  padding: 10px;
-  font-size: 2em;
+  padding: 8px;
+  font-size: 1em;
   width: 60%;
-  height: 8%;
   max-width: 400px;
   margin-bottom: 10px;
 }
@@ -127,5 +109,4 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
   color: #2f3291;
-
 }
