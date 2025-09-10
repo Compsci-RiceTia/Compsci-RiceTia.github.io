@@ -93,7 +93,7 @@ body {
 }
 
 #compressedDisplay {
-  font-size: 1.8em;
+  font-size: 2.8em;
   margin: 20px 0;
   color: #333;
 }
@@ -110,4 +110,5 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
   color: #2f3291;
+
 }
