@@ -2,15 +2,29 @@ body {
   background-color: #f5ebd3;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
   font-family: "Helvetica", sans-serif;
 }
 
+#titleHeader {
+  position: relative;
+  z-index: 3;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #f5ebd3;
+}
+
+
 #titleHeader h1 {
-  text-align: left;
+  font-size: 10vh;
   color: #2f3291;
-  margin: 10px;
-  font-size: 7vh;
-} 
+  margin: 0;
+}
+
 
 .quarter-circle-left {
   color: white;
@@ -27,6 +41,7 @@ body {
   background-color: #2f3291;
   opacity: 0.5;
   border-top-right-radius: 80vw;
+  overflow: none;
 }
 
 .quarter-circle-right {
@@ -44,6 +59,7 @@ body {
   background-color: #2f3291;
   opacity: 0.5;
   border-top-left-radius: 85vh;
+  overflow: none;
 }
 
 #userGuess,
@@ -65,10 +81,10 @@ body {
   border: none;
   font-family: Arial, sans-serif;
   font-size: 2em;
-  cursor: pointer; /* indicate clickable */
+  cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
-  height: 65vh;
+  height: 40vh;
   z-index: 1;
   background-color: #2f3291;
   opacity: 0.5;
@@ -86,15 +102,15 @@ body {
 .screen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   text-align: center;
 }
 
 #compressedDisplay {
+  margin: 1vh;
   font-size: 2.8em;
-  margin: 20px 0;
   color: #333;
 }
 
@@ -110,5 +126,4 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
   color: #2f3291;
-
 }
