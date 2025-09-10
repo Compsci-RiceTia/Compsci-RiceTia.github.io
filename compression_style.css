@@ -5,12 +5,24 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+#titleHeader {
+  position: relative;
+  z-index: 3;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #f5ebd3;
+}
+
+
 #titleHeader h1 {
-  text-align: left;
+  font-size: 10vh;
   color: #2f3291;
-  margin: 10px;
-  font-size: 7vh;
-} 
+  margin: 0;
+}
+
 
 .quarter-circle-left {
   color: white;
@@ -68,7 +80,7 @@ body {
   cursor: pointer; /* indicate clickable */
   transition: background-color 0.3s ease;
   width: 100%;
-  height: 65vh;
+  height: 40vh;
   z-index: 1;
   background-color: #2f3291;
   opacity: 0.5;
@@ -85,7 +97,7 @@ body {
 .screen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   text-align: center;
@@ -98,7 +110,7 @@ body {
 }
 
 #userGuess {
-  padding: 8px;
+  padding: 1em;
   font-size: 1em;
   width: 60%;
   max-width: 400px;
