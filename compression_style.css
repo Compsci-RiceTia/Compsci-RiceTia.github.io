@@ -12,6 +12,7 @@ body {
   position: relative;
   z-index: 3;
   height: 40vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -33,11 +34,11 @@ body {
   font-size: 2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  position: fixed;
+  position: absolute;
   bottom: 0; 
   left: 0;
-  width: 40vw;
-  height: 70vh;
+  width: 50vw;
+  height: 60vh;
   background-color: #2f3291;
   opacity: 0.5;
   border-top-right-radius: 80vw;
@@ -51,15 +52,14 @@ body {
   font-size: 2em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  position: fixed;
+  position: absolute;
   bottom: 0; 
   right: 0;
   width: 60vw;
-  height: 85vh;
+  height: 60vh;
   background-color: #2f3291;
   opacity: 0.5;
   border-top-left-radius: 85vh;
-  overflow: none;
 }
 
 #userGuess,
@@ -81,14 +81,14 @@ body {
   border: none;
   font-family: Arial, sans-serif;
   font-size: 2em;
-  cursor: pointer;
+  cursor: pointer; /* indicate clickable */
   transition: background-color 0.3s ease;
   width: 100%;
   height: 40vh;
   z-index: 1;
   background-color: #2f3291;
   opacity: 0.5;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -115,9 +115,10 @@ body {
 }
 
 #userGuess {
-  padding: 8px;
-  font-size: 1em;
+  padding: 10px;
+  font-size: 2em;
   width: 60%;
+  height: 8%;
   max-width: 400px;
   margin-bottom: 10px;
 }
@@ -126,4 +127,5 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
   color: #2f3291;
+
 }
