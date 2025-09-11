@@ -5,23 +5,12 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
-#titleHeader {
-  position: relative;
-  z-index: 3;
-  height: 40vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: #f5ebd3;
-}
-
-
 #titleHeader h1 {
-  font-size: 10vh;
+  text-align: left;
   color: #2f3291;
-  margin: 0;
-}
+  margin: 10px;
+  font-size: 7vh;
+} 
 
 
 .quarter-circle-left {
@@ -80,7 +69,7 @@ body {
   cursor: pointer; /* indicate clickable */
   transition: background-color 0.3s ease;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   z-index: 1;
   background-color: #2f3291;
   opacity: 0.5;
